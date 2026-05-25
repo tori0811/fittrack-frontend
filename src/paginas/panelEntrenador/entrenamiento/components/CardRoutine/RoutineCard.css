@@ -1,0 +1,120 @@
+.routine-card {
+    width: 100%;
+    height: 220px;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.routine-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+.routine-card:hover::before {
+    transform: scale(1.05);
+}
+
+.routine-card-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 1.2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 40%, rgba(0,0,0,0.1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.6rem;
+    z-index: 1;
+}
+
+.routine-card-info h3 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.routine-card-info span {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.routine-card-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: var(--color-primary);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.2rem 0.8rem;
+    border-radius: 2rem;
+}
+
+.routine-card-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+}
+
+.routine-card-menu-btn {
+    background: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.routine-card:hover .routine-card-menu-btn {
+    opacity: 1;
+}
+
+.routine-card-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0.5rem;
+    min-width: 130px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.routine-card-dropdown button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: var(--color-text);
+    height: auto;
+}
+
+.routine-card-dropdown button:hover {
+    background: var(--color-bg-soft);
+    color: var(--color-accent);
+}

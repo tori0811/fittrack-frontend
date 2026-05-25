@@ -1,0 +1,102 @@
+
+.modo-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+    flex-wrap: wrap;
+}
+
+.modo-card.active {
+    border-color: var(--color-primary);
+    background: var(--color-secondary);
+}
+
+.modo-card-left {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--color-text);
+    min-width: 160px;
+}
+
+.modo-card-desc {
+    flex: 1;
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+}
+
+.toggle-switch {
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    background: var(--color-disabled);
+    position: relative;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.toggle-switch::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.2s;
+}
+
+.toggle-switch.on {
+    background: var(--color-primary);
+}
+
+.toggle-switch.on::after {
+    transform: translateX(20px);
+}
+
+.step3-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+}
+
+.step3-wrapper h4 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    width: 80%;
+}
+
+.step3-area {
+    width: 80%;
+    height: 250px;
+    border: 1.5px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: 1rem;
+    resize: none;
+    font-family: inherit;
+    color: var(--color-text);
+    background: var(--color-bg);
+}
+
+.step3-area:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.tab-wrapper {
+    align-self: center;
+    
+}

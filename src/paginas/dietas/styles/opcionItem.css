@@ -1,0 +1,50 @@
+/* Contenedor principal  */
+.contenedor-lista-general{
+
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3rem;
+    padding-left: 3rem;
+    flex-direction: column;
+
+}
+
+/* Layout */ 
+
+.acciones-general {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+
+}
+
+
+/* Boton layout */
+
+.acciones-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+/* Boton */ 
+
+.acciones-btn button {
+
+    background: none;
+    border: none;
+    color: #5454f2;
+    height: 20px;
+    width: 20px;
+    cursor:pointer;
+}
+
+
+
+
+

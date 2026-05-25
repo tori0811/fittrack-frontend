@@ -1,0 +1,86 @@
+.cuestionario-contenedor {
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  
+}
+
+.cuestionario {
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  justify-content: center; 
+  align-items: center;       
+  padding: 2rem 0;
+}
+
+
+.paso-indicador {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+/*  Barra de progreso */
+
+.barra-progreso {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem 0 2rem 0;
+}
+
+.barra-progreso-relleno {
+  height: 100%;
+  background: linear-gradient(90deg, #3B82F6, #6366F1);
+  transition: width 0.3s ease;
+}
+
+
+/* Botones */
+
+.botones-paso {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+/* BOTÓN SIGUIENTE */
+.btn-siguiente {
+    padding: 1rem 2.2rem;
+    border: none;
+    border-radius: 0.8rem;
+    background: linear-gradient(90deg, #3B82F6, #6366F1);
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+    width: auto;
+}
+
+.btn-siguiente:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+/* BOTÓN ATRÁS */
+.btn-atras {
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    background: #e5e7eb;
+    color: #374151;
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    transition: 0.2s ease;
+    width: auto;
+}
+
+.btn-atras:hover {
+    background: #d1d5db;
+}

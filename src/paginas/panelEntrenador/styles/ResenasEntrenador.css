@@ -1,0 +1,160 @@
+/* CONTENEDOR GENERAL */
+.resenas-wrapper {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+/* MEDIA GLOBAL */
+.rating-header-simple {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.rating-big-number {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #6b4eff;
+}
+
+.rating-star-big svg {
+    width: 22px;
+    height: 22px;
+}
+
+.rating-total {
+    color: #666;
+    font-size: .9rem;
+}
+
+/* FILTROS */
+.filtros {
+    display: flex;
+    gap: .6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filtros button {
+    padding: .45rem .9rem;
+    border-radius: .6rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    transition: .2s ease;
+    font-size: .85rem;
+}
+
+.filtros button.active {
+    background: #6b4eff;
+    color: white;
+    border-color: transparent;
+}
+
+/* LISTA EN ROW */
+.lista-resenas-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+    overflow-x: auto;
+    padding-bottom: .5rem;
+
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+.lista-resenas-row::-webkit-scrollbar {
+    height: 6px;
+}
+
+.lista-resenas-row::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+}
+
+/* CARD INDIVIDUAL */
+.resena-card {
+    min-width: 320px;
+    max-width: 340px;
+    background: white;
+    border: 1px solid #eee;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: 0.25s ease;
+    flex-shrink: 0;
+}
+
+.resena-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    border-color: #d9d9ff;
+}
+
+/* HEADER */
+.resena-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #6b4eff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.resena-info strong {
+    font-size: 1rem;
+    color: #222;
+}
+
+.resena-stars-row {
+    display: flex;
+    gap: 2px;
+}
+
+.fecha {
+    font-size: .78rem;
+    color: #777;
+}
+
+/* COMENTARIO */
+.texto-resena {
+    margin-top: .8rem;
+    color: #444;
+    font-size: .93rem;
+    line-height: 1.35rem;
+}
+
+
+/* Línea sutil bajo el nombre */
+.nombre-linea {
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+/* Reducimos alto del contenedor */
+.resenas-wrapper {
+    padding: 1.5rem 2rem;   /* antes era 2rem, ahora más compacto */
+    gap: 1.2rem;            /* menos separación vertical */
+}
+
+/* Ajustamos la card para que sea más compacta */
+.resena-card, .resena-item {
+    padding: 1rem 1.2rem;    /* menos espacio interior */
+    min-width: 260px;        /* más pequeña */
+    max-width: 280px;
+    border-radius: 0.9rem;
+}
+

@@ -1,0 +1,97 @@
+.serie-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 40px;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.8rem 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.serie-index {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--color-text);
+}
+
+.serie-input {
+    background: var(--color-bg-soft);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    font-size: 1.3rem;
+    text-align: center;
+    outline: none;
+    width: 100%;
+    color: var(--color-text);
+}
+
+.serie-input:focus {
+    border-color: var(--color-primary);
+}
+
+.serie-delete {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+
+.serie-delete:hover {
+    color: var(--color-accent);
+}
+
+.rpe-selector {
+    position: relative;
+}
+
+.rpe-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: var(--color-bg-soft);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+    color: var(--color-text);
+}
+
+.rpe-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    bottom: auto;
+    left: 0;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    z-index: 500;
+    min-width: 160px;
+    overflow: hidden;
+}
+
+.rpe-option {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--color-text);
+    transition: background 0.15s;
+}
+
+.rpe-option:hover {
+    background: var(--color-bg-soft);
+}

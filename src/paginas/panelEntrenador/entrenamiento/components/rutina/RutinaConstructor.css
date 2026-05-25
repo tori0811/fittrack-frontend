@@ -1,0 +1,181 @@
+.constructor {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+}
+
+.constructor-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid var(--color-border);
+    background: #F3F3F3;
+}
+
+.constructor-back {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.constructor-back:hover {
+    background: var(--color-bg-soft);
+    color: var(--color-text);
+}
+
+.constructor-theme-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.constructor-nombre {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--color-text);
+}
+
+.constructor-microciclos {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.microciclo-tab {
+    background: #fafafa;
+    color: #808080;
+    border: 2px solid var(--color-text-muted);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.microciclo-tab.active {
+    background: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+    font-weight: 800;
+}
+
+.microciclo-add {
+    background: var(--color-bg-soft);
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    transition: background 0.2s;
+}
+
+.microciclo-add:hover {
+    background: var(--color-border);
+}
+
+.constructor-divider {
+    height: 1px;
+    background: var(--color-border);
+    margin: 0 2rem;
+}
+
+.constructor-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    color: var(--color-text-muted);
+    font-size: 1.5rem;
+}
+
+.constructor-nombre-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    transition: color 0.2s;
+}
+
+.constructor-nombre-btn:hover {
+    color: var(--color-primary);
+}
+
+.microciclo-tab-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    overflow: visible;
+}
+
+.microciclo-tab-menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    display: none;
+    align-items: center;
+    padding: 0.2rem;
+    align-items: center;
+}
+
+.microciclo-tab-wrapper:hover .microciclo-tab-menu-btn {
+    display: flex;
+    color: white;
+}
+
+.microciclo-tab-wrapper:hover .microciclo-tab-menu-btn {
+    display: flex;
+    color: var(--color-text);
+}
+
+.microciclo-tab-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 0.5rem;
+    min-width: 120px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    z-index: 50;
+}
+
+.microciclo-tab-dropdown button {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0.6rem 1rem;
+    text-align: left;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 6px;
+    color: var(--color-text);
+    height: auto;
+}
+
+.microciclo-tab-dropdown button:hover {
+    background: var(--color-bg-soft);
+}

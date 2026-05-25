@@ -1,0 +1,44 @@
+.tarjetas-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.tarjetas-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.tarjeta {
+  padding: 1.6rem;
+  border: 2px solid #d1d5db;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: #ffffff;
+  transition: 0.2s ease;
+  user-select: none;
+}
+
+.tarjeta:hover {
+  border-color: #6366f1;
+  background: #f3f4ff;
+}
+
+.tarjeta.seleccionada {
+  border-color: #6366f1;
+  background: #e0e7ff;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.4);
+}
+
+
+.pregunta h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+

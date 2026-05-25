@@ -1,0 +1,44 @@
+.contenedor {
+    max-width: 120rem;       
+    margin: 0 auto;
+    padding: 3rem;       
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;          
+}
+
+/* CADA SECCIÓN */
+.item {
+    background: white;
+    border-radius: 2rem;   
+    overflow: hidden;        
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* EL BOTÓN (HEADER) */
+.item button {
+    width: auto;            
+    padding: 2rem 3rem;
+    background: white;
+    border: none;
+    cursor: pointer;
+    
+    /* Para alinear contenido */
+    display: flex;      
+    justify-content: center;   
+    align-items: center;        
+    
+    font-size:1.4rem;
+    transition: all 0.3s ease; 
+}
+
+/* HOVER del botón */
+.item button:hover {
+    background: #f8f9fa;
+}
+
+/* EL CONTENIDO */
+.contenido {
+    padding: 2rem;       
+    background: #fafafa;
+}

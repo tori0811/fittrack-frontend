@@ -1,0 +1,16 @@
+
+
+.acciones-general button {
+
+    color: #5454f2 ;
+    cursor:pointer;
+    height: 20px;
+    width: 20px;
+    border: none;
+    background:none;
+}
+
+.acciones-general button:hover{
+    color:red;
+    
+}

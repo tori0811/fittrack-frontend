@@ -1,0 +1,52 @@
+
+.sidebar {
+
+    background-color: #1a1a1a;
+    width: 6rem;
+    min-height: 100%;
+
+}
+
+
+.sidebar-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 52px;
+    color: #666;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}
+
+
+
+.sidebar-tooltip {
+    display: none;
+    position: absolute;
+    left: 68px;
+    background: #333;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    white-space: nowrap;
+    
+}
+
+.sidebar-item:hover .sidebar-tooltip {
+    display: block;
+    
+}
+.sidebar-item:hover {
+
+    background-color: #2a2a2a ;
+
+}
+
+.sidebar-item.active {
+
+    color: #5A54F2;
+}

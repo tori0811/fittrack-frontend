@@ -1,0 +1,45 @@
+
+/* Contenedor principal */
+
+.wrapper-general {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background: #f8f9fa; 
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex-direction: column;
+
+}
+
+.header-general {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    width: 100%;
+    border-left: 2px solid #e0e0e0;
+
+}
+
+/* Header */
+
+.header-general button {
+    cursor: pointer;
+    background: none;
+    color: #5454f2;
+    border: none;
+}
+
+.header-general h4 {
+    font-size: 1.3rem;
+}
+
+.lista-contenedor {
+
+    display: flex;
+    flex-direction: column;
+
+}

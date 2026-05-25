@@ -1,0 +1,97 @@
+/* ============================
+   CONTENEDOR GENERAL
+============================ */
+.panel-entrenador {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 3rem;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 4rem;
+    
+}
+
+/* ============================
+   CONTENEDOR DE SECCIÓN
+============================ */
+.seccion-contenedor {
+    background: #ffffff;
+    border-radius: 1.2rem;
+    padding: 2rem 2.2rem;
+    border: 1px solid #e9e9e9;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.05),
+        inset 0 1px 0 rgba(255,255,255,0.7);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+/* ============================
+   TÍTULOS DE SECCIÓN
+============================ */
+.seccion-titulo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    color: #222;
+   
+}
+
+
+
+.seccion-titulo.separado {
+    border-top: 1px solid #eee;
+    padding-top: 1.8rem;
+}
+
+/* ============================
+   SECCIÓN DE CLIENTES
+============================ */
+
+.seccion-clientes-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.seccion-clientes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.seccion {
+    padding-left: 0.2rem;
+}
+
+.icono-seccion {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.seccion-titulo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.titulo-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6b4eff, #9f7bff);
+    box-shadow: 0 3px 10px rgba(107, 78, 255, 0.28);
+    color: white;
+}

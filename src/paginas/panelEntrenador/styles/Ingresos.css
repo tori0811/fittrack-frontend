@@ -1,0 +1,55 @@
+.ingresos-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* AHORA ES ROW */
+.ingresos-resumen {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap; /* por si la pantalla es pequeña */
+}
+
+/* Tus tarjetas se mantienen igual */
+.ingreso-item {
+    flex: 1;
+    min-width: 220px;
+
+    padding: 1.6rem;
+    border-radius: 1rem;
+    border: 1px solid #eee;
+    background: white;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+    transition: .25s ease;
+}
+
+.ingreso-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.07);
+}
+
+.ingreso-numero {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6b4eff;
+}
+
+/* HISTORIAL TAL CUAL */
+.ingresos-tabla {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.pago-row {
+    display: flex;
+    justify-content: space-between;
+    padding: .8rem 1rem;
+    background: #fafafa;
+    border-radius: .6rem;
+    border: 1px solid #eee;
+}

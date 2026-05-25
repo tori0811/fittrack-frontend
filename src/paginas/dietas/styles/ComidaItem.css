@@ -1,0 +1,98 @@
+
+/* Contenedor principal */
+.item-contenedor  {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.fila-principal {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px  #5454f6;
+    padding: 1rem;
+
+}
+
+.comida-inputs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+/* Inputs / Select */ 
+
+input, select {
+    border-radius: 0.6rem;
+    border: 1px solid #ddd;
+    cursor:pointer;
+    background-color: white;
+}
+
+input:hover{
+    
+    border-color:#5454f2;
+}
+
+input:focus{
+
+    outline: none;
+    border-color: #5454f2;
+    box-shadow:0 0 0 3px rgba(90, 84, 242, 0.1); 
+}
+
+.comida-inputs select:hover {
+
+    border-color: #5454f2;
+
+}
+
+.comida-inputs select:focus {
+
+    outline: none;
+    border-color: #5454f2;
+    box-shadow:0 0 0 3px rgba(90, 84, 242, 0.1); 
+
+}
+
+/* Select > Options */
+
+.comida-inputs option {
+    padding: 0.5rem;
+    background: white;
+    color: #333;
+}
+
+/* BOTONES */
+
+.comida-acciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+    
+}
+
+.comida-acciones button {
+    background: none;
+    color: #5454f2;
+    border: none;
+    
+}
+
+.comida-acciones button {
+    height: 20px;
+    width: 20px;
+}

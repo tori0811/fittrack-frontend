@@ -1,0 +1,41 @@
+/* --- Caracteristicas --- */
+
+.caracteristicas {
+    padding: 6rem 2rem;
+    background-color: white;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.titulo-caracteristicas {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #3B82F6;
+    margin-bottom: 2rem;
+}
+
+.caracteristicas-descripcion {
+    max-width: 70ch;
+    margin: 0 auto 4rem;
+    color: black;
+    font-size: 1.9rem;
+    line-height: 1.5;
+}
+
+.caracteristica-item {
+    margin-bottom: 3rem;
+}
+
+.caracteristicas-contenido {
+    color: #3B82F6;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.caracteristicas-texto {
+    color: black;
+    max-width: 65ch;
+    margin: 0.5rem auto 0;
+    font-size: 1.7rem;
+    line-height: 1.45;
+}

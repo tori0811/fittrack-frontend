@@ -1,0 +1,33 @@
+.inputs-medidas {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.input-card {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.4rem;
+    border: 2px solid #d1d5db;
+    border-radius: 1rem;
+    background: #fff;
+    transition: 0.2s ease;
+}
+
+.input-card:hover {
+    border-color: #6366f1;
+    background: #f3f4ff;
+}
+
+.icono {
+    font-size: 2rem;
+}
+
+.input-card input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+}

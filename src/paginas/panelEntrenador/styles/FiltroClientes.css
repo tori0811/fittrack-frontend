@@ -1,0 +1,17 @@
+.filtros-inline {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.filtros-inline input,
+.filtros-inline select {
+    padding: .6rem .9rem;
+    border-radius: .6rem;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: .95rem;
+}
+
+.filtros-inline select {
+    cursor: pointer;
+}

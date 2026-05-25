@@ -1,0 +1,57 @@
+/* Paleta de colores */
+
+:root {
+    --color-primary: #5A54F2;
+    --color-primary-hover: #4840E0;
+    
+    --color-secondary: #F2F2FF;  /* morado muy suave para fondos y hover suaves */
+    
+    --color-accent: #E61B0E;     /* rojo para errores, eliminar, alertas */
+    --color-accent-hover: #C21509;
+    
+    --color-text: #1A1A2E;       /* casi negro con toque azulado */
+    --color-text-muted: #6B6B8A; /* gris para textos secundarios */
+    
+    --color-border: rgba(0,0,0,0.1);
+    --color-disabled: #CCCCCC;
+    
+    --color-bg: #FFFFFF;
+    --color-bg-soft: #F7F7FB;    /* fondo suave para cards y secciones */
+
+    --font-body: "Inter", sans-serif;
+    --font-heading: "Krub", sans-serif;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after { 
+    box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Inter' sans-serif; 
+
+}
+
+.app-main {
+  min-height: calc(100vh - 200px); /* Ajusta restándole la altura del navbar+footer */
+}
+
+.app-content {
+  padding-top: 6rem;
+}
+
+
+.app-content.no-padding {
+  padding-top: 0;
+}
+
+
+
+

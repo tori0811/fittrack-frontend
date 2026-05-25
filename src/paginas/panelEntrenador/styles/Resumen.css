@@ -1,0 +1,26 @@
+.trainer-overview {
+    padding: 3.5rem 2.5rem;
+    border-radius: 1.6rem;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.12),
+        inset 0 1px 4px rgba(255,255,255,0.3);
+
+    text-align: left;
+}
+
+.trainer-overview h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.trainer-overview p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+}

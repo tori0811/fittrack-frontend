@@ -1,0 +1,11 @@
+.contenido-informacion {
+    background: radial-gradient(circle at top left, #1a2332, #111827 70%);
+    border-top: 2px solid rgba(255,255,255,0.08);
+}
+.inicio > .portada {
+    
+    grid-column: 1 / -1;
+    
+    
+}
+

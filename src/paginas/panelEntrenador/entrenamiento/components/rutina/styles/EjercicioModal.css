@@ -1,0 +1,152 @@
+.detalle-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.detalle-modal {
+    background: var(--color-bg);
+    border-radius: 16px;
+    width: 90%;
+    max-width: 650px;
+    overflow: visible;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.detalle-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.5rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.detalle-modal-info h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--color-text);
+}
+
+.detalle-modal-grupo {
+    font-size: 1.3rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+}
+
+.detalle-modal-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+}
+
+.detalle-modal-close:hover {
+    color: var(--color-text);
+}
+
+.detalle-modal-body {
+    padding: 2rem 2.5rem;
+    overflow: visible;
+}
+
+.series-container {
+    margin-bottom: 0.5rem;
+}
+
+.series-header-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr 40px;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.serie-add-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    border-top: 1px solid var(--color-border);
+    padding: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+    margin-top: 1rem;
+}
+
+.serie-add-btn:hover {
+    color: var(--color-primary);
+}
+
+.detalle-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem 2.5rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.detalle-modal-aceptar {
+    background: var(--color-accent);
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 800;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.detalle-modal-aceptar:hover {
+    filter: brightness(1.1);
+}
+
+.ejercicio-modal-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.ejercicio-modal-field label {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-text-muted);
+}
+
+.ejercicio-modal-field input {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    font-size: 1.4rem;
+    outline: none;
+    color: var(--color-text);
+    background: var(--color-bg);
+}
+
+.ejercicio-modal-field input:focus {
+    border-color: var(--color-primary);
+}
+
+.ejercicio-modal-cancel {
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--color-text-muted);
+}

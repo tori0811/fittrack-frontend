@@ -1,0 +1,58 @@
+/* Layout general */
+.entrenadores {
+  padding: 6rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+}
+
+/* Titles */
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #6b7280;
+  margin-bottom: 4rem;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Card base */
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  min-height: 200px;
+}
+
+
+.skeleton {
+  background: linear-gradient(
+    100deg,
+    #e5e7eb 40%,
+    #f3f4f6 50%,
+    #e5e7eb 60%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.4s infinite linear;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

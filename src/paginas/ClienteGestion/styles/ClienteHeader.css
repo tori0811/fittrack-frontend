@@ -1,0 +1,119 @@
+/* CONTENEDOR */
+.cliente-header-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    padding-top: 8rem;
+}
+
+/* CARD */
+.cliente-card {
+    width: 100%;
+    max-width: 420px;
+
+    background: white;
+    padding: 2rem 2.2rem;
+    border-radius: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* FOTO GRANDE */
+.cliente-avatar-big {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(0,0,0,0.15);
+}
+
+/* INICIAL SI NO HAY FOTO */
+.cliente-avatar-inicial {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background: #dfe3e8;
+    color: #333;
+    font-size: 3rem;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid rgba(0,0,0,0.15);
+}
+
+/* TEXTO */
+.cliente-nombre {
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.cliente-email {
+    margin: 0;
+    opacity: 0.7;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* TELÉFONO + WA */
+.cliente-phone-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.3rem;
+    font-size: 1.05rem;
+}
+
+.cliente-whatsapp {
+    font-size: 1.6rem;
+    color: #25D366;
+    transition: 0.2s ease;
+}
+
+.cliente-whatsapp:hover {
+    transform: scale(1.15);
+}
+
+/* BOTONES */
+.cliente-actions-card {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cliente-actions-card button {
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+/* PERFIL */
+.btn-perfil {
+    background: #f2f2f2;
+}
+.btn-perfil:hover {
+    background: #e6e6e6;
+}
+
+/* NOTA */
+.btn-nota {
+    background: #dce8ff;
+    color: #1d4ed8;
+}
+.btn-nota:hover {
+    background: #c7dbff;
+}

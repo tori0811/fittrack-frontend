@@ -1,0 +1,111 @@
+/* Contenedor */
+
+.portada {
+    grid-column: 1 / -1;
+    position:relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenido-principal {
+    min-height: 100vh;
+    height: 100vh;
+    grid-column: 1 / -1;
+    position: relative;  
+    
+}
+@media (max-width: 768px ) {
+    .contenido-principal{
+        min-height: 100vh;
+        height: 100vh;
+    }
+}
+
+
+/* Video de fondo */
+.video-inicio {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Capa oscura sobre el video */
+.overlay {
+    position: absolute;
+    inset: 0; 
+    z-index: 2;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.5)
+    );
+}
+
+/* Contenedor del texto principal */
+.inicio-inner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+    gap: 3rem;
+    padding: 0 1.5rem;
+    transform: translateY(-5%);
+}
+
+@media (max-width: 900px) {
+  .informacion-inner {
+    grid-template-columns: 1fr;
+  }
+  .imagen-secundario {
+    height: 300px;
+  }
+  .informacion-texto {
+    padding: 2rem;
+    text-align: center;
+    border-left: none;
+  }
+}
+
+.inicio-titulo {
+    font-size: 5rem;
+    color: white;
+    font-style: italic;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.inicio-parrafo {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    max-width: 60ch;
+    color: #E5E7EB;
+}
+
+/* Botón principal hero */
+.inicio-enlace {
+    display: inline-block;
+    padding: 1.2rem 2.8rem;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.8rem;
+
+    background: linear-gradient(90deg, #3B82F6, #6366F1);
+    color: white;
+
+    transition: all 0.25s ease;
+    box-shadow: 0 0 12px rgba(59,130,246,0.35);
+   
+}
+
+
+.inicio-enlace:hover {
+    transform: translateY(-3px) scale(1.03);
+    filter: brightness(1.12);
+    box-shadow: 0 0 22px rgba(99,102,241,0.55);
+}

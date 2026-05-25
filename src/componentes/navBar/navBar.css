@@ -1,0 +1,172 @@
+/* 
+   CONTENEDOR NAVBAR
+*/
+.nav-contenedor {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    height: var(--navbar-height);
+}
+
+/* 
+   NAV PRINCIPAL
+ */
+.nav {
+    background-color: rgba(10,10,12,0.3);
+    height: 6rem;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.06);
+    padding-top: 0.3rem;
+}
+
+.nav-inner {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1.5rem;
+    gap: 3rem;
+}
+
+/* 
+    LOGO + TÍTULO
+*/
+.nav-logo {
+    width: 6rem;
+    height: auto;
+}
+
+.nav-titulo {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #e5e7eb;
+    padding-bottom: 1rem;
+}
+
+.nav-izq {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* 
+   ENLACES GENERALES
+*/
+.nav-enlace {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+    font-family: "Inter", "Montserrat", "Krub", sans-serif;
+    text-decoration: none;
+    color: #eceff3;
+    transition: 0.2s ease;
+}
+
+.nav-enlace:hover {
+    color: #3B82F6;
+    opacity: 1;
+}
+
+/* 
+   ZONA CENTRAL 
+*/
+.nav-mid {
+    display: flex;
+    gap: 3.4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+   ZONA DERECHA (login / logout)
+*/
+.nav-derecha {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* Logout rojo */
+.nav-logout {
+    cursor: pointer;
+    color: #ef4444;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* 
+   BOTÓN MENÚ MÓVIL
+*/
+.nav-menu-btn {
+    font-size: 2.7rem;
+    cursor: pointer;
+    color: #eceff3;
+    display: none; 
+}
+
+/* 
+   MENÚ MÓVIL
+*/
+.nav-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background: #111;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform .3s ease;
+    z-index: 999;
+}
+
+.nav-mobile.open {
+    transform: translateX(0);
+}
+
+.nav-mobile a,
+.nav-mobile button {
+    font-size: 2rem;
+    color: white;
+    text-align: left;
+}
+
+/* Botón cerrar menú */
+.close-btn {
+    background: transparent;
+    border: none;
+    font-size: 3rem;
+    color: white;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+/* 
+   RESPONSIVE 
+*/
+@media (max-width: 768px) {
+
+    
+    .nav-mid,
+    .nav-derecha {
+        display: none;
+    }
+
+    
+    .nav-menu-btn {
+        display: block;
+    }
+}
+
+
+

@@ -1,0 +1,28 @@
+.microciclo-content {
+    padding: 2rem;
+}
+
+.entrenos-grid {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.entreno-add-btn {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    min-width: 200px;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+}
+
+.entreno-add-btn:hover {
+    background: #333;
+}

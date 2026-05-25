@@ -1,0 +1,48 @@
+.ejercicio-card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.ejercicio-card:hover {
+    border-color: var(--color-primary);
+}
+
+.ejercicio-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+}
+
+.ejercicio-nombre {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.ejercicio-delete {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+}
+
+.ejercicio-delete:hover {
+    color: var(--color-accent);
+}
+
+.ejercicio-resumen {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem 0.8rem;
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+}
