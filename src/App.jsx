@@ -3,23 +3,23 @@ import './estilos/normalize.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
-import NavBar from './componentes/navBar/NavBar.jsx';
-import Inicio from './paginas/Inicio/Inicio.jsx';
+import NavBar from './componentes/navBar/navBar.jsx';
+import Inicio from './paginas/Inicio/inicio.jsx';
 import Entrenadores from './paginas/entrenadores/entrenadores.jsx';
-import Footer from './componentes/footer/Footer.jsx';
+import Footer from './componentes/footer/footer.jsx';
 import Login from './paginas/login/login.jsx'
 import Register from './paginas/registro/register.jsx';
 import CuestionarioInicial from './paginas/cuestionario-inicial/cuestionarioInicial.jsx';
 import RequireCuestionario from './guards/RequireCuestionario.jsx';
 import PanelEntrenador from './paginas/panelEntrenador/PanelEntrenador.jsx';
 import ClienteGestion from './paginas/ClienteGestion/ClienteGestion.jsx';
-import EntrenadorLayout from './layouts/EntrenadorLayout.jsx';
+import EntrenadorLayout from './layouts/entrenadorLayout.jsx';
 import Entrenamiento from './paginas/panelEntrenador/entrenamiento/Entrenamiento.jsx';
 import RutinaConstructor from './paginas/panelEntrenador/entrenamiento/components/rutina/RutinaConstructor.jsx';
 import Dietas from './paginas/panelEntrenador/dietas/Dietas.jsx';
 import DietaConstructor from './paginas/panelEntrenador/dietas/components/dietas/components/constructor/DietaConstructor.jsx';
 
-import ClienteLayout from './layouts/ClienteLayout.jsx';
+import ClienteLayout from './layouts/clienteLayout.jsx';
 import Dashboard from './paginas/PanelCliente/views/Dashboard.jsx';
 import MiRutina from './paginas/PanelCliente/views/Mirutina.jsx';
 import MiDieta from './paginas/PanelCliente/views/Midieta.jsx';
