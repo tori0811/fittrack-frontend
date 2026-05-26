@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 import NavBar from './componentes/navBar/navBar.jsx';
-import Inicio from './paginas/Inicio/inicio.jsx';
+import Inicio from './paginas/Inicio/Inicio.jsx';
 import Entrenadores from './paginas/entrenadores/entrenadores.jsx';
 import Footer from './componentes/footer/footer.jsx';
 import Login from './paginas/login/login.jsx'
