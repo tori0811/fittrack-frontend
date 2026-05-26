@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Entrenadores.css";
-import EntrenadorCard from "./entrenadorCard";
+import EntrenadorCard from "./EntrenadorCard";
 import Planes from "./Planes";
 
 export default function Entrenadores() {

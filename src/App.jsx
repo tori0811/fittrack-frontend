@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 import NavBar from './componentes/navBar/navBar';
-import Inicio from './paginas/inicio/inicio';
-import Entrenadores from './paginas/entrenadores/entrenadores';
+import Inicio from './paginas/Inicio/Inicio.jsx';
+import Entrenadores from './paginas/entrenadores/Entrenadores.jsx';
 import Footer from './componentes/footer/footer';
 import Login from './paginas/login/login'
 import Register from './paginas/registro/register';
