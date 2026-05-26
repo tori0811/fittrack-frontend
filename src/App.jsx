@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 import NavBar from './componentes/navBar/navBar.jsx';
 import Inicio from './paginas/Inicio/Inicio.jsx';
-import Entrenadores from './paginas/entrenadores/entrenadores.jsx';
+import Entrenadores from './paginas/entrenadores/Entrenadores.jsx';
 import Footer from './componentes/footer/footer.jsx';
 import Login from './paginas/login/login.jsx'
 import Register from './paginas/registro/register.jsx';
