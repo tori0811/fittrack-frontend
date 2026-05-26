@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import './Entrenamiento.css';
-import Filters from "./components/filters";
+import Filters from "./components/Filters";
 import CreateModal from "./components/modal/createModal";
 import RoutineCard from "./components/CardRoutine/RoutineCard";
 import { usePlantillas, useEditarPlantilla } from "./hook/entrenamiento.hooks";

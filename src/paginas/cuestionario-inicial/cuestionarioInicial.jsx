@@ -2,14 +2,14 @@ import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import "./cuestionario.css";
 //Imports Componentes Cuestionario
-import PasoObjetivo from "./pasoObjetivo";
-import PasoActividad from "./pasoActividad";
-import PasoMedidas from "./pasoMedidas";
-import PasoDisponibilidad from "./pasoDisponibilidad";
-import PasoExperiencia from "./pasoExperiencia";
-import PasoLesiones from "./pasoLesiones";
-import PasoDieta from "./pasoDieta";
-import PasoHabitos from "./pasoHabitos";
+import PasoObjetivo from "./PasoObjetivo";
+import PasoActividad from "./PasoActividad";
+import PasoMedidas from "./PasoMedidas";
+import PasoDisponibilidad from "./PasoDisponibilidad";
+import PasoExperiencia from "./PasoExperiencia";
+import PasoLesiones from "./PasoLesiones";
+import PasoDieta from "./PasoDieta";
+import PasoHabitos from "./PasoHabitos";
 
 
 export default function CuestionarioInicial() {
