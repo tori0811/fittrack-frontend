@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import './register.css';
 
 export default function Register() {
@@ -33,7 +33,17 @@ export default function Register() {
     const [mostrarPassword, setMostrarPassword] = useState(false);
     const [mostrarConfirmarPassword, setMostrarConfirmarPassword] = useState(false);
 
+    //Token vincular cliente / entrenador
+    const [searchParams] = useSearchParams();
+    const token = searchParams.get("token"); 
+
     const navigate = useNavigate();
+
+    useEffect(() => {
+        if (token) {
+            setRole("cliente");
+        }
+    }, [token]);
 
     const registrarUsuario = async (e) => {
         e.preventDefault();
@@ -42,7 +52,7 @@ export default function Register() {
             alert("Las contraseñas no coinciden");
             return;
         }
-
+2
         if (name.trim().length < 2) {
             alert("El nombre es demasiado corto");
             return;
@@ -65,7 +75,8 @@ export default function Register() {
             pais, provincia, ciudad,
             codigo_postal: codigoPostal,
             direccion, direccion_secundaria: direccionSecundaria,
-            password, role
+            password, role,
+            token
         };
 
         try {

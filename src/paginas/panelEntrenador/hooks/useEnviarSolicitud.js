@@ -7,7 +7,7 @@ export default function useEnviarSolicitud() {
 
     const enviarSolicitud = async (email) => {
         try {
-            const res = await fetch("http://localhost:8000/api/entrenador/solicitud", {
+            const res = await fetch("http://localhost:8000/api/entrenador/invitaciones/enviar", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
